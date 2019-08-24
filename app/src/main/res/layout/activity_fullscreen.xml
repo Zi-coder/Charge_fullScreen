@@ -41,8 +41,39 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="517dp"
             app:srcCompat="@drawable/battery" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFF"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/bPercent"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="center"
+                android:text="23"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFF"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
     </FrameLayout>
 
 </FrameLayout>
