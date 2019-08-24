@@ -1,4 +1,4 @@
-package com.newmain.chargestatus;
+package com.anil.chargestatus;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.newmain.chargestatus", appContext.getPackageName());
+        assertEquals("com.anil.chargestatus", appContext.getPackageName());
     }
 }

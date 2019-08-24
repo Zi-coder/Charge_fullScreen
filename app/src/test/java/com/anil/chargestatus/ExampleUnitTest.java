@@ -1,4 +1,4 @@
-package com.newmain.chargestatus;
+package com.anil.chargestatus;
 
 import org.junit.Test;
 
