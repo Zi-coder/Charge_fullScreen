@@ -1,8 +1,3 @@
 <resources>
     <string name="app_name">ChargeStatus</string>
-    <string name="chargeStatus">Status</string>
-    <string name="batteryPer">Percentage</string>
-    <string name="miliAmp">mAh</string>
-    <string name="battery_status">Image</string>
-
 </resources>

@@ -16,15 +16,15 @@ public class BatteryReceiver extends BroadcastReceiver{
 
     @Override
     public void onReceive(Context context, Intent intent){
-        WaveLoadingView waveLoadingView = ((FullscreenActivity)context).findViewById(R.id.waveLoadingView);
-        TextView tv = ((FullscreenActivity)context).findViewById(R.id.chargeStatus);
+        WaveLoadingView waveLoadingView = ((MainActivity)context).findViewById(R.id.waveLoadingView);
+        TextView tv = ((MainActivity)context).findViewById(R.id.chargeStatus);
         String action = intent.getAction();
-        TextView bp = ((FullscreenActivity)context).findViewById(R.id.batteryPercent);
-        ImageView imageView = ((FullscreenActivity)context).findViewById(R.id.imageView);
+        TextView bp = ((MainActivity)context).findViewById(R.id.batteryPercent);
+        ImageView imageView = ((MainActivity)context).findViewById(R.id.imageView);
         if(action != null && action.equals(Intent.ACTION_BATTERY_CHANGED)){
             int percent = intent.getIntExtra(BatteryManager.EXTRA_LEVEL,0);
             bp.setText(Integer.toString(percent) + "%");if(percent < 30){
-            waveLoadingView.setWaveColor(-65536);
+                waveLoadingView.setWaveColor(-65536);
             }
             else{
                 waveLoadingView.setWaveColor(-8586240);
